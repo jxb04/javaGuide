@@ -16,6 +16,8 @@ public class SelfTest3 {
 		}  while (ignore != '.');
 		
 		System.out.println("The number of spaces that were input is: " + spaceCount);
+		
+			
 	}
 	
 }
