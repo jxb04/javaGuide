@@ -5,7 +5,9 @@ public class TwoVehicles {
 	
 	public static void main(String args[]) {
 		Vehicle minivan = new Vehicle();
-		Vehicle sportscar = new Vehicle();
+		// another way to do same thing with two statements
+		Vehicle sportscar;             //declare reference to object 
+		sportscar = new Vehicle();     //allocate a Vehicle object
 		
 		int range1, range2;
 		
