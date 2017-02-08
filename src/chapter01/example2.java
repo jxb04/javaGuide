@@ -1,4 +1,4 @@
-package chapter1;
+package chapter01;
 
 /* This demonstrates a variable.
  * example2.java

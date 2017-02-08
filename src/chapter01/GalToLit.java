@@ -1,4 +1,4 @@
-package chapter1;
+package chapter01;
 
 /*   Try This 1-1
  *   This program converts gallons to liters

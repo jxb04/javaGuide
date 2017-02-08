@@ -1,4 +1,4 @@
-package chapter3;
+package chapter03;
 
 //Guess the letter game, 4th version
 

@@ -1,4 +1,4 @@
-package chapter1;
+package chapter01;
 
 /* 
  * Try this 1-2

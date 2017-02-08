@@ -1,4 +1,4 @@
-package chapter3;
+package chapter03;
 
 /* Use nested loops to find factors of numbers
  * between 2 and 100

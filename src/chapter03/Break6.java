@@ -1,4 +1,4 @@
-package chapter3;
+package chapter03;
 
 // Where you put label is important
 

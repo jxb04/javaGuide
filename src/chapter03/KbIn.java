@@ -1,4 +1,4 @@
-package chapter3;
+package chapter03;
 
 //Read a character from the keyboard
 

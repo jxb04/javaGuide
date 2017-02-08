@@ -1,4 +1,4 @@
-package chapter3;
+package chapter03;
 
 //Changes lower case letters to upper and upper case to lower
 

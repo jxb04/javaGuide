@@ -1,4 +1,4 @@
-package chapter3;
+package chapter03;
 
 // Compute integer powers of 2
 
