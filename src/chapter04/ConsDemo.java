@@ -5,7 +5,7 @@ package chapter04;
 class MyClass {
 	int x;
 	
-	MyClass() {
+	MyClass() {  // constructor name is the same as the namne of the class
 		x = 10;
 	}
 }
