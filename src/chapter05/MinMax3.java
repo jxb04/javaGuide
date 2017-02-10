@@ -14,7 +14,6 @@ public class MinMax3 {
 	for (int i: nums ) {
 		if(i < min) min = i;
 		if(i > max) max = i;
-//		System.out.println("Min = " + min + " Max = " + max);
 	}
 	System.out.println("min and max: " + min + " " + max);
 
