@@ -2,19 +2,19 @@ package chapter07;
 
 // Demonstrate dynamic method dispatch.
 
-class Sup {
+class Sup {                                 //Superclass
 	void who() {
 		System.out.println("who() in Sup");
 	}
 }
 
-class Sub1 extends Sup {
+class Sub1 extends Sup {                    // Subclass
 	void who() {
 		System.out.println("who() in Sub1");
 	}
 }
 
-class Sub2 extends Sub1 {
+class Sub2 extends Sub1 {                    // Subclass
 	void who() {
 		System.out.println("who() in Sub2");
 	}
@@ -27,6 +27,9 @@ public class DynDispDemo {
 		Sub2 subObj2 = new Sub2();
 		
 		Sup supRef;
+		
+		// the version of who() executed is determined by the type of object being referred to at the time of the call,
+		// not by the class type of supRef.
 		
 		supRef = superObj;
 		supRef.who();
