@@ -45,7 +45,7 @@ class TwoDShape7 {
 	}
 	
 	double area() {
-		System.out.println("area() must be overridden");
+		System.out.println("area() must be overridden");  // reminder that each subclass must override this method
 		return 0.0;
 	}
 }
