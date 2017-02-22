@@ -80,7 +80,7 @@ class Triangle7 extends TwoDShape7 {
 		style = ob.style;
 	}
 	
-	// Override area() for Triangle
+	// Override superclass TwoDShape's area() for Triangle
 	double area() {
 		return getWidth() * getHeight() / 2;
 	}
