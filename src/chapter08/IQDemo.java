@@ -1,5 +1,7 @@
 package chapter08;
 
+import chapter08.qpack.ICharQ;
+
 // A fixed-size queue class for characters
 class FixedQueue implements ICharQ {
 	private char q[]; // this array holds the queue

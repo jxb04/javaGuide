@@ -1,4 +1,4 @@
-package chapter08;
+package chapter08.qpack;
 
 // A character queue interface
 public interface ICharQ {
