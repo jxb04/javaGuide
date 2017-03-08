@@ -12,7 +12,7 @@ public class ExcDemo3 {
 			                       numer[i]/denom[i]);
 			}
 			catch (ArithmeticException exc) {
-				// catch the exception
+				// catch the arithmetic exception
 				System.out.println("Can't devide by zero!");
 			}
 		}
