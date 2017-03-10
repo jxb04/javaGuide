@@ -40,13 +40,16 @@ public class ShowFile {
 		catch (IOException exc) {
 			System.out.println("Error reading file.");
 		}
+		finally {                               // use finally clause to close a file
+			// close the file on the way out of the try block.
+			try {
+				fin.close();  // close the file
+			}
+			catch (IOException exc) {
+				System.out.println("Error closing file.");
+			}
+		}
 		
-		try {
-			fin.close();   // close the file
-		}
-		catch (IOException exc) {
-			System.out.println("Error closing file.");
-		}
 	}
 
 }
