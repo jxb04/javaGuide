@@ -21,7 +21,7 @@ public class RandomAccessDemo {
 			d = raf.readDouble();
 			System.out.println("First value is " + d);
 			
-			raf.seek(8);  // seek to second double
+			raf.seek(8);  // seek to second double - double value is 8 bytes long, so each value starts on an 8-byte boundary
 			d = raf.readDouble();
 			System.out.println("Second value is " + d);
 			
