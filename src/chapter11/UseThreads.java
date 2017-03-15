@@ -11,7 +11,7 @@ class MyThread implements Runnable {
 	
 	// entry point of thread
 	public void run() {
-		System.out.println(thrdName + "starting");
+		System.out.println(thrdName + " starting");
 		try {
 			for (int count = 0; count < 10; count++) {
 				Thread.sleep(400);
