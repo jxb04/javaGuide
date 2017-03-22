@@ -14,6 +14,13 @@ class TickTock {
 		
 		System.out.print("Tick ");
 		
+		// wait 1/2 second
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException exc) {
+			System.out.println("Thread interupted.");
+		}
+		
 		state = "ticked";  // set the current state to ticked
 		
 		notify();          // let tock() run
@@ -34,6 +41,13 @@ class TickTock {
 		
 		System.out.println("Tock");
 		
+		// wait 1/2 second
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException exc) {
+			System.out.println("Thread interupted.");
+		}
+
 		state = "tocked";  // set the current state to tocked
 		
 		notify();          // let tick() run
