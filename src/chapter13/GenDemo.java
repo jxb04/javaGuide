@@ -5,8 +5,8 @@ package chapter13;
  * of type Gen is created.
  */
 
-class Gen<T> {              // declare a generic class.  T is the generic type parameter
-	T ob;                   // declare an object of type T
+class Gen<T> {    // declare a generic class.  T is the generic type parameter
+	T ob;         // declare an object of type T
 	
 	// Pass the constructor a reference to an object of type T
 	Gen(T o) {
