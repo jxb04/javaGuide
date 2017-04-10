@@ -37,7 +37,8 @@ public class RawDemo {
         // int i = (Integer) raw.getob();        // run-time error
        
         // This assignment overrides type safety.
-        strOb = raw;   // OK, but potentially wrong.
+        strOb = raw;   // OK, but potentially wrong.  Unchecked warning from compiler that raw type was used in a way that
+                       // might jeopardize type safety.
         // String str = strOb.getob();   // run-time error
         
         // This assignment also overrides type safety.
