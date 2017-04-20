@@ -21,6 +21,12 @@ public class MethodRefDemo2 {
 		ip = myNum2::isFactor;
 		result = ip.test(3);
 		if(!result) System.out.println("3 is not a factor of " + myNum2.getNum());
+
+		// This time, a method reference to hasCommonFactor on myNum2 is created
+		// and used to call hasCommonFactor() via test()
+		ip = myNum2::hasCommonFactor;
+		result = ip.test(9);
+		if(result) System.out.println("Common factor found.");
 	}
 
 }
