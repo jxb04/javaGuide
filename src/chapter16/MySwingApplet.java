@@ -1,0 +1,71 @@
+package chapter16;
+
+// A simple Swing-based applet
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+/* 
+This HTML can be used to launch the applet:
+
+<applet code="MySwingApplet" width=200 height= 80>
+</applet>
+ */
+
+public class MySwingApplet extends JApplet {         // Swing applets must extend JApplet
+	JButton jbtnUp;
+	JButton jbtnDown;
+	
+	JLabel jlab;
+	
+	// Initialize the applet
+	public void init() {
+		try {
+			SwingUtilities.invokeAndWait(new Runnable () {
+				public void run() {
+					makeGUI();   // initialize the gui
+				}
+			});
+		} catch (Exception exc) {
+			System.out.println("Can't create beacuse of " + exc);
+		}
+	}
+	
+	// This applet does not need to override start(), stop() or destroy().
+	
+	// Set up and initialize the GUI
+	private void makeGUI() {
+		// set the applet to use flow layout.
+		setLayout(new FlowLayout());
+		
+		// Make two buttons
+		jbtnUp = new JButton("Up");
+		jbtnDown = new JButton("Down");
+		
+		// Add the action listener for Up button
+		jbtnUp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent ae) {
+				jlab.setText("You pressed up.");
+			}
+		});
+		
+		// Add the action listener for Down button
+		jbtnDown.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent ae) {
+				jlab.setText("You pressed down.");
+			}
+		});
+		
+		// Add the buttons to the content pane
+		add(jbtnUp);
+		add(jbtnDown);
+		
+		// Create a text-based label
+		jlab = new JLabel("Press a button.");
+		
+		// Add the label to the content pane.
+		add(jlab);
+	}
+
+}
