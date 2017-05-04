@@ -41,7 +41,7 @@ public class CheckboxDemo extends Application {
 		rootNode.setAlignment(Pos.CENTER);
 		
 		// Create a scene
-		Scene myScene = new Scene(rootNode, 230, 200);
+		Scene myScene = new Scene(rootNode, 350, 200);
 		
 		// Set the scene on the stage
 		myStage.setScene(myScene);
@@ -122,9 +122,9 @@ public class CheckboxDemo extends Application {
 		void showAll() {
 			computers = "";
 			if (cbSmartphone.isSelected()) computers = "Smartphone ";
-			if (cbTablet.isSelected()) computers = "Tablet ";
-			if (cbNotebook.isSelected()) computers = "Notebook ";
-			if (cbDesktop.isSelected()) computers = "Laptop ";
+			if (cbTablet.isSelected()) computers += "Tablet ";
+			if (cbNotebook.isSelected()) computers += "Notebook ";
+			if (cbDesktop.isSelected()) computers += "Laptop ";
 			
 			selected.setText("Computers selected: " + computers);
 			
